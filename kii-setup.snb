@@ -1,0 +1,157 @@
+{
+  "metadata" : {
+    "name" : "kii-setup",
+    "user_save_timestamp" : "1970-01-01T09:00:00.000Z",
+    "auto_save_timestamp" : "1970-01-01T09:00:00.000Z",
+    "language_info" : {
+      "name" : "scala",
+      "file_extension" : "scala",
+      "codemirror_mode" : "text/x-scala"
+    },
+    "trusted" : true,
+    "customLocalRepo" : null,
+    "customRepos" : null,
+    "customDeps" : null,
+    "customImports" : null,
+    "customArgs" : null,
+    "customSparkConf" : null
+  },
+  "cells" : [ {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "presentation" : {
+        "tabs_state" : "{\n  \"tab_id\": \"#tab1776055664-0\"\n}",
+        "pivot_chart_state" : "{\n  \"hiddenAttributes\": [],\n  \"menuLimit\": 200,\n  \"cols\": [],\n  \"rows\": [],\n  \"vals\": [],\n  \"exclusions\": {},\n  \"inclusions\": {},\n  \"unusedAttrsVertical\": 85,\n  \"autoSortUnusedAttrs\": false,\n  \"inclusionsInfo\": {},\n  \"aggregatorName\": \"Count\",\n  \"rendererName\": \"Table\"\n}"
+      },
+      "id" : "FFC149632A2446748B295EB52E88E8B4"
+    },
+    "cell_type" : "code",
+    "source" : ":dp \"com.typesafe\" % \"config\" % \"1.3.1\"\n:dp \"org.scalaj\" %% \"scalaj-http\" % \"2.3.0\"",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "globalScope.jars: Array[String] = [Ljava.lang.String;@4e9efdda\nres3: List[String] = List(/var/folders/v_/p3__wq5j49l786kwm6s0d2bw0000gn/T/spark-notebook/aether/42985fd8-bb49-4542-b7b5-2454ce289cc2/com/typesafe/config/1.3.1/config-1.3.1.jar, file:/Users/syahriza/spark-notebook/lib/common.common-0.7.0-scala-2.11.8-spark-2.1.1-hadoop-2.8.0.jar)\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : "<div>\n      <script data-this=\"{&quot;dataId&quot;:&quot;anon0b35d1226a5802cd596819d013ffd90d&quot;,&quot;dataInit&quot;:[],&quot;genId&quot;:&quot;1776055664&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/req(['../javascripts/notebook/playground','../javascripts/notebook/magic/tabs'], \n      function(playground, _magictabs) {\n        // data ==> data-this (in observable.js's scopedEval) ==> this in JS => { dataId, dataInit, ... }\n        // this ==> scope (in observable.js's scopedEval) ==> this.parentElement ==> div.container below (toHtml)\n\n        playground.call(data,\n                        this\n                        ,\n                        {\n    \"f\": _magictabs,\n    \"o\": {}\n  }\n  \n                        \n                        \n                      );\n      }\n    );/*]]>*/</script>\n    <div>\n      <div>\n        <ul class=\"nav nav-tabs\" id=\"ul1776055664\"><li>\n              <a href=\"#tab1776055664-0\"><i class=\"fa fa-table\"/></a>\n            </li><li>\n              <a href=\"#tab1776055664-1\"><i class=\"fa fa-cubes\"/></a>\n            </li></ul>\n\n        <div class=\"tab-content\" id=\"tab1776055664\"><div class=\"tab-pane\" id=\"tab1776055664-0\">\n            <div>\n      <script data-this=\"{&quot;dataId&quot;:&quot;anon840803deccefdf1105eb73baa31c5ed0&quot;,&quot;dataInit&quot;:[{&quot;string value&quot;:&quot;/var/folders/v_/p3__wq5j49l786kwm6s0d2bw0000gn/T/spark-notebook/aether/42985fd8-bb49-4542-b7b5-2454ce289cc2/com/typesafe/config/1.3.1/config-1.3.1.jar&quot;},{&quot;string value&quot;:&quot;file:/Users/syahriza/spark-notebook/lib/common.common-0.7.0-scala-2.11.8-spark-2.1.1-hadoop-2.8.0.jar&quot;}],&quot;genId&quot;:&quot;1639040700&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/req(['../javascripts/notebook/playground','../javascripts/notebook/magic/tableChart'], \n      function(playground, _magictableChart) {\n        // data ==> data-this (in observable.js's scopedEval) ==> this in JS => { dataId, dataInit, ... }\n        // this ==> scope (in observable.js's scopedEval) ==> this.parentElement ==> div.container below (toHtml)\n\n        playground.call(data,\n                        this\n                        ,\n                        {\n    \"f\": _magictableChart,\n    \"o\": {\"headers\":[\"string value\"],\"width\":600,\"height\":400}\n  }\n  \n                        \n                        \n                      );\n      }\n    );/*]]>*/</script>\n    <div>\n      <span class=\"chart-total-item-count\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anon91e425390026a4dd934a4c8decf0e34b&quot;,&quot;initialValue&quot;:&quot;2&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p> entries total</span>\n      <span class=\"chart-sampling-warning\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anona0ea6266833974982acf4f64832716b3&quot;,&quot;initialValue&quot;:&quot;&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p></span>\n      <div>\n      </div>\n    </div></div>\n            </div><div class=\"tab-pane\" id=\"tab1776055664-1\">\n            <div>\n      <script data-this=\"{&quot;dataId&quot;:&quot;anon4d0a7bcc6adac5683a1b916a9c348426&quot;,&quot;dataInit&quot;:[{&quot;string value&quot;:&quot;/var/folders/v_/p3__wq5j49l786kwm6s0d2bw0000gn/T/spark-notebook/aether/42985fd8-bb49-4542-b7b5-2454ce289cc2/com/typesafe/config/1.3.1/config-1.3.1.jar&quot;},{&quot;string value&quot;:&quot;file:/Users/syahriza/spark-notebook/lib/common.common-0.7.0-scala-2.11.8-spark-2.1.1-hadoop-2.8.0.jar&quot;}],&quot;genId&quot;:&quot;355537299&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/req(['../javascripts/notebook/playground','../javascripts/notebook/magic/pivotChart'], \n      function(playground, _magicpivotChart) {\n        // data ==> data-this (in observable.js's scopedEval) ==> this in JS => { dataId, dataInit, ... }\n        // this ==> scope (in observable.js's scopedEval) ==> this.parentElement ==> div.container below (toHtml)\n\n        playground.call(data,\n                        this\n                        ,\n                        {\n    \"f\": _magicpivotChart,\n    \"o\": {\"width\":600,\"height\":400,\"derivedAttributes\":{},\"extraOptions\":{}}\n  }\n  \n                        \n                        \n                      );\n      }\n    );/*]]>*/</script>\n    <div>\n      <span class=\"chart-total-item-count\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anon7705a03ccbb668f34f42152144c5e3cc&quot;,&quot;initialValue&quot;:&quot;2&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p> entries total</span>\n      <span class=\"chart-sampling-warning\"><p data-bind=\"text: value\"><script data-this=\"{&quot;valueId&quot;:&quot;anonc263734dfc1016aaa2cbaea5a630d7ae&quot;,&quot;initialValue&quot;:&quot;&quot;}\" type=\"text/x-scoped-javascript\">/*<![CDATA[*/\nreq(\n['observable', 'knockout'],\nfunction (O, ko) {\n  ko.applyBindings({\n      value: O.makeObservable(valueId, initialValue)\n    },\n    this\n  );\n});\n        /*]]>*/</script></p></span>\n      <div>\n      </div>\n    </div></div>\n            </div></div>\n      </div>\n    </div></div>"
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 83,
+      "time" : "Took: 1 second 77 milliseconds, at 2017-6-7 15:33"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "FBADB7976A6B46B8AEDAD4D586ED8D9F"
+    },
+    "cell_type" : "code",
+    "source" : "import com.typesafe.config.ConfigFactory\nimport scala.util.parsing.json.{JSONArray, JSONObject}\n\nval conf = ConfigFactory.load(\"notebooks/spark-notebook-nre/kii.properties\")\n\nval host = conf.getString(\"kii.app.host\")\nval appID = conf.getString(\"kii.app.id\")\nval base64Credential = conf.getString(\"kii.base64.credential\")\nval appKey = conf.getString(\"kii.app.key\")\nval userName = conf.getString(\"kii.username\")\nval userPassword = conf.getString(\"kii.userpassword\")\nval thingID= conf.getString(\"kii.thing.id\")\n\nval mJson = Map[String, String](\n    \"grant_type\" -> \"password\",\n    \"username\" -> userName,\n    \"password\" -> userPassword\n)\n\nval payload = JSONObject(mJson).toString()\n",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "import com.typesafe.config.ConfigFactory\nimport scala.util.parsing.json.{JSONArray, JSONObject}\nconf: com.typesafe.config.Config = Config(SimpleConfigObject({\"akka\":{\"actor\":{\"creation-timeout\":\"20s\",\"debug\":{\"autoreceive\":\"off\",\"event-stream\":\"off\",\"fsm\":\"off\",\"lifecycle\":\"off\",\"receive\":\"off\",\"router-misconfiguration\":\"off\",\"unhandled\":\"off\"},\"default-dispatcher\":{\"attempt-teamwork\":\"on\",\"default-executor\":{\"fallback\":\"fork-join-executor\"},\"executor\":\"default-executor\",\"fork-join-executor\":{\"parallelism-factor\":3,\"parallelism-max\":64,\"parallelism-min\":8,\"task-peeking-mode\":\"FIFO\"},\"mailbox-requirement\":\"\",\"shutdown-timeout\":\"1s\",\"thread-pool-executor\":{\"allow-core-timeout\":\"on\",\"core-pool-size-factor\":3,\"core-pool-size-max\":64,\"core-pool-size-min\":8,\"keep-alive-time\":\"60s\",\"max-pool-s..."
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 84,
+      "time" : "Took: 823 milliseconds, at 2017-6-7 15:33"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "D31146C72561431E960F4292FE0DC14A"
+    },
+    "cell_type" : "code",
+    "source" : "import scalaj.http._\n\nval jsonString = Http(s\"https://$host/api/apps/3d73cc26/oauth2/token\")\n.postData(payload)\n.header(\"Authorization\", s\"Basic $base64Credential\")\n.header(\"Content-Type\", \"application/json\")\n.asString.body ",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "import scalaj.http._\njsonString: String =\n{\n  \"id\" : \"56ab473c0260-bd98-6e11-9cbd-0e4e7dd9\",\n  \"access_token\" : \"NJw1zBDprIIeg-ZZN5LjetriAZGV14lQSzCkXsIF9H0\",\n  \"expires_in\" : 2147483646,\n  \"token_type\" : \"bearer\"\n}\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 85,
+      "time" : "Took: 715 milliseconds, at 2017-6-7 15:33"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "7147C4B66CC4454288C3F7A8BB093478"
+    },
+    "cell_type" : "code",
+    "source" : "import scala.util.parsing.json._\nval json:Option[Any] = JSON.parseFull(jsonString)\nval map:Map[String,Any] = json.get.asInstanceOf[Map[String, Any]]",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "import scala.util.parsing.json._\njson: Option[Any] = Some(Map(id -> 56ab473c0260-bd98-6e11-9cbd-0e4e7dd9, access_token -> NJw1zBDprIIeg-ZZN5LjetriAZGV14lQSzCkXsIF9H0, expires_in -> 2.147483646E9, token_type -> bearer))\nmap: Map[String,Any] = Map(id -> 56ab473c0260-bd98-6e11-9cbd-0e4e7dd9, access_token -> NJw1zBDprIIeg-ZZN5LjetriAZGV14lQSzCkXsIF9H0, expires_in -> 2.147483646E9, token_type -> bearer)\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 86,
+      "time" : "Took: 669 milliseconds, at 2017-6-7 15:33"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "8B043073C696482F82D913170036F121"
+    },
+    "cell_type" : "code",
+    "source" : "val accessToken = map(\"access_token\")",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "accessToken: Any = NJw1zBDprIIeg-ZZN5LjetriAZGV14lQSzCkXsIF9H0\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : ""
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 87,
+      "time" : "Took: 791 milliseconds, at 2017-6-7 15:34"
+    } ]
+  }, {
+    "metadata" : {
+      "trusted" : true,
+      "input_collapsed" : false,
+      "collapsed" : false,
+      "id" : "8FCBC006DE3B45E98D1E8E3570AEFF29"
+    },
+    "cell_type" : "code",
+    "source" : "val group = \"vehicle-monitoring\"\nval confBucket = \"config\"\n\nval config = JSONObject(Map[String, Any](\n    \"chart_type\" -> \"line\",\n    \"title\" -> \"Velocity\",\n    \"x-axis-title\" -> \"date hour\",\n    \"y-axis-title\" -> \"velocity (KM/hours)\",\n    \"field\"->\"velocity\",\n    \"bucket\"->\"can-logger\",\n    \"time-window-seconds\"->60\n)).toString()\n\nHttp(s\"https://$host/api/apps/$appID/groups/$group/buckets/$confBucket/objects/velocity-chart\")\n.postData(config)\n.method(\"PUT\")\n.header(\"Authorization\", s\"Bearer $accessToken\")\n.header(\"Content-Type\", \"application/json\")\n.asString.body ",
+    "outputs" : [ {
+      "name" : "stdout",
+      "output_type" : "stream",
+      "text" : "group: String = vehicle-monitoring\nconfBucket: String = config\nconfig: String = {\"field\" : \"velocity\", \"x-axis-title\" : \"date hour\", \"time-window-seconds\" : 60, \"chart_type\" : \"line\", \"bucket\" : \"can-logger\", \"title\" : \"Velocity\", \"y-axis-title\" : \"velocity (KM\\/hours)\"}\nres27: String =\n{\n  \"createdAt\" : 1496821413615,\n  \"modifiedAt\" : 1496821826473\n}\n"
+    }, {
+      "metadata" : { },
+      "data" : {
+        "text/html" : "{\n  &quot;createdAt&quot; : 1496821413615,\n  &quot;modifiedAt&quot; : 1496821826473\n}"
+      },
+      "output_type" : "execute_result",
+      "execution_count" : 97,
+      "time" : "Took: 1 second 170 milliseconds, at 2017-6-7 16:50"
+    } ]
+  } ],
+  "nbformat" : 4
+}
